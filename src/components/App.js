@@ -32,10 +32,10 @@ const App = () => {
 
     return (
       <div id="main">
-        <div id="wrapper">
+        <div id="wrapper" className="buttons">
           <div className="quote-text" style={{backgroundColor : colors[0]}}>{data && data.content}</div>
           <div className="quote-author" style={{backgroundColor : colors[0]}}>{data && data.author}</div>
-          <button id="new-quote" onClick={change}>Change</button>
+          <button id="new-quote" className="button" onClick={change}>Change</button>
         </div>
       </div>
     );
